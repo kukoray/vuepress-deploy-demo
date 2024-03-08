@@ -1,4 +1,4 @@
-name: A TO A:GH_PAGES
+name: Build and Deploy
 on: [push]
 jobs:
   build-and-deploy:
@@ -10,7 +10,7 @@ jobs:
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
-        ACCESS_TOKEN: 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
+        ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN }}
         TARGET_REPO: kukoray/vuepress-deploy-demo
         TARGET_BRANCH: gh_pages
         BUILD_SCRIPT: npm install && npm run docs:build

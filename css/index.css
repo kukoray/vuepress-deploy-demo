@@ -1,0 +1,71 @@
+:root {
+    --search-input-width: 14rem
+}
+
+/* 一级目录下文件名 */
+.sidebar > .sidebar-links > li > a.sidebar-link {
+    margin-top: -12px !important;
+    font-size: 18px !important;
+}
+
+/* 一级目录下li标签文字大小 */
+.sidebar > .sidebar-links > li {
+    font-size: 18px !important;
+}
+
+/* 一级目录下文件夹名 */
+.sidebar-group.collapsable.depth-0 {
+    margin-top: -12px !important;
+    font-size: 18px !important;
+}
+
+/* 每级文件名大小为上级的百分比 */
+.sidebar-link {
+    font-size: 0.98em !important;
+}
+
+/* 展开栏剪头 */
+.sidebar-heading .arrow {
+    left: 0.3em !important;
+}
+
+
+blockquote {
+    background-color: #f3f5f7 !important;
+    border-color: #42b983 !important;
+    padding: 0.1rem 1.5rem !important;
+    border-left-width: 0.5rem !important;
+    border-left-style: solid !important;
+    margin: 1rem 0 !important;
+}
+
+/* 引用块样式 */
+blockquote p {
+    color: #2d3d50;
+    display: block !important;
+    margin-block-start: 0.5em !important;
+    margin-block-end: 0.5em !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+}
+
+/* 引用块内的li样式 */
+blockquote li {
+    color: #2d3d50;
+}
+
+
+.sidebar-group.collapsable.depth-0 * {
+    font-size: 0.98em;
+}
+
+.theme-default-content img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar-group.is-sub-group > .sidebar-heading:not(.clickable) {
+    opacity: 1 !important;
+    font-weight: bold;
+}

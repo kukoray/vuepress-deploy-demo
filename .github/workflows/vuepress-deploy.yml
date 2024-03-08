@@ -1,0 +1,18 @@
+name: A TO A:GH_PAGES
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: vuepress-deploy
+      uses: jenkey2011/vuepress-deploy@master
+      env:
+        ACCESS_TOKEN: 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
+        TARGET_REPO: kukoray/vuepress-deploy-demo
+        TARGET_BRANCH: gh_pages
+        BUILD_SCRIPT: yarn && yarn build
+        BUILD_DIR: docs/.vuepress/dist/
+        CNAME: https://www.kukoray.com
